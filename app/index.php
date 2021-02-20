@@ -22,10 +22,11 @@ $resultIguais = array_intersect($resultArray3, $resultArray5);
 $resultArray3 = array_diff($resultArray3, $resultIguais);
 $resultArray5 = array_diff($resultArray5, $resultIguais);
 
-echo "\n_______________________DESAFIO_____________________\n";
+echo "\n______________________DESAFIO_____________________\n";
 
 $resultArray5 = ajuste($result, $resultArray5, 'TI', $copiaResult);
 $resultArray3 = ajuste($resultArray5, $resultArray3, 'StarCorp', $copiaResult);
 $finalDesafio = ajuste($resultArray3, $resultIguais, 'StarCorpianos', $copiaResult);
-
+echo '<br>';
 imprimir($finalDesafio, 'LISTA');
+echo '<br>';
